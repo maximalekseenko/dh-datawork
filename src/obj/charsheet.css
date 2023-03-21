@@ -1,0 +1,23 @@
+/* 5 * 2 / sqrt(2) */
+:root {
+    --cahrsheet-background: #b8963f;
+    --cahrsheet-list1: #ba8d1b;
+    --cahrsheet-list2: #886815;
+    /* --cahrsheet-list2: #886815; */
+}
+
+.corner5left {
+    background:
+            linear-gradient(135deg, transparent 5px, var(--cahrsheet-list1) 0, 25%, transparent 0),
+            linear-gradient(45deg, transparent 5px, var(--cahrsheet-list1) 0, 25%, transparent 0),
+            linear-gradient(90deg, transparent 8px, var(--cahrsheet-list1) 0),
+            linear-gradient(0deg, transparent 8px, var(--cahrsheet-list1) 0, calc(100% - 8px), transparent 0 );
+}
+.corner5right {
+    background:
+            linear-gradient(135deg, transparent 5px, var(--cahrsheet-list1) 0, 25%, transparent 0),
+            linear-gradient(45deg, transparent 5px, var(--cahrsheet-list1) 0, 25%, transparent 0),
+            linear-gradient(90deg, transparent 8px, var(--cahrsheet-list1) 0),
+            linear-gradient(0deg, transparent 8px, var(--cahrsheet-list1) 0, calc(100% - 8px), transparent 0 );
+}
+

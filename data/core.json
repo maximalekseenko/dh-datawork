@@ -1,0 +1,31 @@
+{
+    "weapons": [
+        {
+            "name":"",
+            "class":"",
+            "range":0,
+            "rof":[0, 0, 0],
+            "dam":[0, 0, 0, ""],
+            "pen":0,
+            "clip":0,
+            "rld":0,
+            "specal":[],
+            "wt":0,
+            "avaliability":"",
+            "description":""
+        },{
+            "name":"Bolt Pistol",
+            "class":"Pistol",
+            "range":30,
+            "rof":[1, 2, 0],
+            "dam":[1, 10, 4, "E"],
+            "pen":4,
+            "clip":8,
+            "rld":1,
+            "specal":["Tearing"],
+            "wt":3.5,
+            "avaliability":"Very Rare",
+            "description":"Both a status symbol and puissant weapon, bolt pistols are rare in numbers but always feared. In the hands of an Imperial Guard Commissar, one can reverse a cowardly retreat; in the hands of an Inquisitor, it can stop a cult leader from summoning an unholy Daemon. Such is their power, both symbolic and physical, that many eagerly sacrifice all to possess one."
+        }
+    ]
+}
