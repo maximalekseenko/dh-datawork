@@ -1,4 +1,3 @@
-/* 5 * 2 / sqrt(2) */
 :root {
     --cahrsheet-background: #b8963f;
     --cahrsheet-list1: #ba8d1b;
@@ -22,14 +21,41 @@
             linear-gradient(0deg, transparent 8px, var(--cahrsheet-list1) 0, calc(100% - 8px), transparent 0 );
 }
 
-.weapons-head {
-    border-radius: 1px; 
-    border-color: var(--cahrsheet-border);
+html {
+    font-family: 'Caslon-antique';
+    font-weight: bold;
+}
+
+
+.weapons {
+    border: 1px solid var(--cahrsheet-border);
+}
+
+.weapons .weapons-head {
+    overflow: hidden;
+    display: flex;
+    border: 1px solid var(--cahrsheet-border);
     background-color: var(--cahrsheet-list1);
 }
 
-.weapons-line {
-    border-radius: 1px; 
-    border-color: var(--cahrsheet-border);
+.weapons .weapons-line {
+    overflow: hidden;
+    display: flex;
+    border: 1px solid var(--cahrsheet-border);
     background-color: var(--cahrsheet-list2);
+}
+
+.weapons label {
+    font: 20px 'Caslon-antique';
+    float: left;
+    height: 100%;
+}
+
+.weapons input {
+    font: 20px 'Caslon-antique';
+    border: 0px solid transparent;
+    background-color: transparent;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }

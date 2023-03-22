@@ -20,8 +20,10 @@
     <script src="obj/fill-weapon.js"></script>
     <script type="text/javascript">
         $(document).ready(function(e) {
-            $("#includedContent").load("obj/charsheet.html"); 
             LoadData("core.json");
+            $("#includedContent").load("obj/charsheet.html", function() {
+                UpdateWeapons();
+            });
         });
     </script>
 </html>
