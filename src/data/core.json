@@ -1,6 +1,10 @@
 {
     "weapon-specal":[
-
+        {
+            "id":"storm",
+            "name":"Storm",
+            "description":"Firing with a hail of shots, these weapons strike so rapidly that enemies are filled with metal in an instant. This quality doubles the number of hits the weapon inflicts on the target and the amount of ammunition expended. For example, when firing a weapon with the Storm quality in fully automatic mode, each degree of success yields two additional hits (up to the weapon’s firing rate, as normal)."
+        }
     ],
     "weapons": [
         {

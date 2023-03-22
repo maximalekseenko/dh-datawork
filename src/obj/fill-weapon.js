@@ -16,9 +16,6 @@ function UpdateWeapons() {
             $( this ).find( '[name=avl]' ).val(weapon["avl"]);
 
             $( this ).find( '.weapons-head' ).attr('title', weapon["description"]);
-
-            
-            // $( this ) > $('td[name=""]')
         })
     });
 }
