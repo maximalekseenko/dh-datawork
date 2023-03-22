@@ -3,6 +3,7 @@
     "http-server": "^14.1.1"
   },
   "scripts": {
-    "start": "http-server ./src"
+    "start": "http-server ./src",
+    "debug": "http-server ./src -c10"
   }
 }
