@@ -9,7 +9,7 @@
             "description":"These weapons call on spinning chainblades, serrated claws, burrowing projectiles, and other vicious means to rip apart targets. These weapons roll one extra die for damage, and the lowest result is discarded."
         }
     ],
-    "weapons": [
+    "weapon": [
         {   "id":"boltpistol",
             "name":"Bolt Pistol",
             "cls":"Pistol",

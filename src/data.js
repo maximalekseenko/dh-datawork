@@ -1,48 +1,60 @@
 var Data = {
-    "weapons": {},
+    "weapon": {},
+    "weapon-specal": {},
 };
+const FIELDS = {
+    "weapon": [
+        "name",
+        "cls",
+        "rng",
+        "rof",
+        "dam",
+        "pen",
+        "clip",
+        "rld",
+        "specal",
+        "wt",
+        "avl",
+        "description",
+    ],
 
-const WEAPONFIELDS = [
-    "name",
-    "cls",
-    "rng",
-    "rof",
-    "dam",
-    "pen",
-    "clip",
-    "rld",
-    "specal",
-    "wt",
-    "avl",
-    "description",
-]
+    "weapon-specal": [
+        "name",
+        "description",
+    ]
+}
 
 
 function LoadData( dataName) {
-    $.getJSON( "data/" + dataName, function( newData ){
+    $.getJSON( "data/" + dataName, function( newData ) {
 
-        // ----- weapons -----
-        if ("weapons" in newData) {
-            newData["weapons"].forEach(weaponData => {
+        for (const [datatype, datafields] of Object.entries(FIELDS)) {
 
-                // weapon dosent exist -> create new
-                if (!(weaponData["id"] in Data["weapons"])){
-                    Data["weapons"][weaponData["id"]] = { "id": weaponData["id"] }
-                }
+            // not adding data of this type
+            if (!(datatype in newData)) return;
+
+            // add data
+            newData[ datatype ].forEach( dataobj => {
+                // new data this new id -> create
+                if (!(dataobj[ "id" ] in Data[ datatype ])) Data[ datatype ][ dataobj[ "id" ] ] = { "id": dataobj[ "id" ] }
+
                 // fill data
-                WEAPONFIELDS.forEach( fieldname => {
-                    // override but low
-                    if ("override" in weaponData && weaponData["override"] < Data["weapons"][weaponData["id"]][fieldname + "-override"]) return;
-                    // not override but exists
-                    if (!("override" in weaponData) && fieldname in Data["weapons"][weaponData["id"]]) return;
+                datafields.forEach( fieldname => {
+                    // override but lower value
+                    if ("override" in dataobj && dataobj["override"] < Data[ datatype ][ dataobj["id"]][fieldname + "-override"]) return;
+                    // not override but such field already exists
+                    if (!("override" in dataobj) && fieldname in Data[ datatype ][ dataobj[ "id" ] ]) return;
 
-                    Data["weapons"][weaponData["id"]][fieldname] = weaponData[fieldname];
+                    // set field value
+                    Data[ datatype ][ dataobj["id"]][ fieldname ] = dataobj[ fieldname ];
 
-                    if ("override" in weaponData)
-                        Data["weapons"][weaponData["id"]][fieldname + "-override"] = weaponData["override"];
-                    else Data["weapons"][weaponData["id"]][fieldname + "-override"] = -1;
+                    // set override value
+                    if ("override" in dataobj)
+                        Data[ datatype ][ dataobj["id"]][ fieldname + "-override" ] = dataobj[ "override" ];
+                    else Data[ datatype ][ dataobj["id"]][ fieldname + "-override" ] = 0;
                 })
             });
-        }
+        };
     });
+    console.log(Data)
 }

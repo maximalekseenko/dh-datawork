@@ -1,7 +1,7 @@
 function UpdateWeapons() {
     $( '.weapon' ).each( function( i ) {
         $( this ).load( "obj/weapon.html", function( e ) {
-            var weapon = Data.weapons[ $( this ).attr( 'weapon-id' ) ]
+            var weapon = Data[ "weapon" ][ $( this ).attr( 'weapon-id' ) ]
 
             $( this ).find( '[name=name]' ).val(weapon["name"]);
             $( this ).find( '[name=cls]' ).val(weapon["cls"]);
