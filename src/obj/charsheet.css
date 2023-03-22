@@ -21,3 +21,15 @@
             linear-gradient(90deg, transparent 8px, var(--cahrsheet-list1) 0),
             linear-gradient(0deg, transparent 8px, var(--cahrsheet-list1) 0, calc(100% - 8px), transparent 0 );
 }
+
+.weapons-head {
+    border-radius: 1px; 
+    border-color: var(--cahrsheet-border);
+    background-color: var(--cahrsheet-list1);
+}
+
+.weapons-line {
+    border-radius: 1px; 
+    border-color: var(--cahrsheet-border);
+    background-color: var(--cahrsheet-list2);
+}
