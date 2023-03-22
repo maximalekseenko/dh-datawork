@@ -3,15 +3,22 @@
 
 
 <html> 
-  <head> 
-    <script> 
-    $(function(){
-      $("#includedContent").load("obj/charsheet.html"); 
-    });
-    </script> 
-  </head> 
+    <head> 
+    </head> 
 
-  <body> 
-     <div id="includedContent"></div>
-  </body> 
+    <body> 
+        <div id="includedContent"></div>
+    </body> 
+
+    <button onclick="UpdateWeapons();"> A</button>
+
+
+    <script src="data.js"></script>
+    <script src="obj/fill-weapon.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            $("#includedContent").load("obj/charsheet.html"); 
+            LoadData("core.json");
+        });
+    </script>
 </html>

@@ -3,6 +3,7 @@
     --cahrsheet-background: #b8963f;
     --cahrsheet-list1: #ba8d1b;
     --cahrsheet-list2: #886815;
+    --cahrsheet-border: #503d0d;
     /* --cahrsheet-list2: #886815; */
 }
 
@@ -20,4 +21,3 @@
             linear-gradient(90deg, transparent 8px, var(--cahrsheet-list1) 0),
             linear-gradient(0deg, transparent 8px, var(--cahrsheet-list1) 0, calc(100% - 8px), transparent 0 );
 }
-

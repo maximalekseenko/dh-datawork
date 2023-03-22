@@ -1,6 +1,7 @@
 {
     "weapons": [
         {
+            "id":"",
             "name":"",
             "class":"",
             "range":0,
@@ -13,7 +14,8 @@
             "wt":0,
             "avaliability":"",
             "description":""
-        },{
+        }, {
+            "id":"boltpistol",
             "name":"Bolt Pistol",
             "class":"Pistol",
             "range":30,
