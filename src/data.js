@@ -1,5 +1,5 @@
 var Data = {
-    "weapons": [],
+    "weapons": {},
 };
 
 function LoadData( dataName) {
@@ -8,7 +8,7 @@ function LoadData( dataName) {
         // ----- weapons -----
         if ("weapons" in newData) {
             newData["weapons"].forEach(weaponData => {
-                Data["weapons"]["id"] = weaponData;
+                Data["weapons"][weaponData["id"]] = weaponData;
             });
         }
     });
