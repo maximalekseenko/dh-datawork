@@ -11,7 +11,7 @@ function UpdateWeapons() {
             $( this ).find( '[name=pen]' ).val(weapon["pen"]);
             $( this ).find( '[name=clip]' ).val(weapon["clip"]);
             $( this ).find( '[name=rld]' ).val(weapon["rld"]);
-            $( this ).find( '[name=wt]' ).val(weapon["wt"]);
+            $( this ).find( '[name=wt]' ).val(weapon["wt"] + 'kg');
             // Specal
             weapon["specal"].forEach((specal_id, i, arr) => {
                 if (specal_id.match(/ \(\d+\)$/)){

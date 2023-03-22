@@ -40,7 +40,7 @@
             "clip":8,
             "rld":"Full",
             "specal":["tearing"],
-            "wt":"3.5kg",
+            "wt": 3.5,
             "avl":"Very Rare",
             "description":"Both a status symbol and puissant weapon, bolt pistols are rare in numbers but always feared. In the hands of an Imperial Guard Commissar, one can reverse a cowardly retreat; in the hands of an Inquisitor, it can stop a cult leader from summoning an unholy Daemon. Such is their power, both symbolic and physical, that many eagerly sacrifice all to possess one."
         },
@@ -54,7 +54,7 @@
             "clip":24,
             "rld":"Full",
             "specal":["tearing"],
-            "wt":"7kg",
+            "wt": 7,
             "avl":"Very Rare",
             "description":"Boltguns, or bolters as they are often called, are the main weapon of the Space Marines, who carry versions so huge that few humans can easily lift one, let alone fire it. The lighter models others use to serve the Emperor are only slightly less destructive, but still powerful enough to destroy any who oppose His Will."
         },
@@ -68,7 +68,7 @@
             "clip":60,
             "rld":"Full",
             "specal":["tearing"],
-            "wt":"40kg",
+            "wt": 40,
             "avl":"Very Rare",
             "description":"This huge weapon is rarely used outside of military forces, but sometimes is all that stands against some of the terrors of the Ruinous Powers. The larger shells carry additional propellant and stronger explosive charges, making them deadly against armoured foes at long ranges."
         },
@@ -82,7 +82,7 @@
             "clip":60,
             "rld":"Full",
             "specal":["storm", "tearing"],
-            "wt":"9kg",
+            "wt": 9,
             "avl":"Extremely Rare",
             "description":"Storm bolters combine the firing power of two boltguns into one compact weapon. They fire an unstoppable hail of metal that can tear apart groups of enemies in a single salvo, and can bring a furious charge to a dead halt in moments."
         }
