@@ -1,0 +1,9 @@
+{
+  "name":"dh-datawork",
+  "main":"./index.html",
+  "window":{
+    "width":1920,
+    "height":1080,
+    "icon":"./icon.ico"
+  }
+}

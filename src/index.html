@@ -11,9 +11,19 @@
 
     <body> 
         <div id="includedContent"></div>
+        asdasd
     </body> 
 
-    <button onclick="UpdateWeapons();"> A</button>
+    <button onclick="// Load native UI library
+    var ngui = require('nw.gui');
+    // Get the current window
+    var nwin = ngui.Window.get();
+    // this will do a hard refresh
+    nwin.reloadIgnoringCache();
+    
+    // here's a regular refresh
+     nwin.reload();
+    "> A</button>
 
 
     <script src="data.js"></script>
@@ -26,4 +36,7 @@
             });
         });
     </script>
+    <script>
+        require('nw.gui').Window.get().showDevTools();
+      </script>
 </html>
