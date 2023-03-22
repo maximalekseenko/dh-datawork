@@ -46,12 +46,14 @@ html {
 }
 
 .weapons label {
+    color: #101010;
     font: 20px 'Caslon-antique';
     float: left;
     height: 100%;
 }
 
 .weapons input {
+    color: #000000;
     font: 20px 'Caslon-antique';
     border: 0px solid transparent;
     background-color: transparent;
