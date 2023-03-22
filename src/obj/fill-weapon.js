@@ -12,10 +12,18 @@ function UpdateWeapons() {
             $( this ).find( '[name=clip]' ).val(weapon["clip"]);
             $( this ).find( '[name=rld]' ).val(weapon["rld"]);
             $( this ).find( '[name=wt]' ).val(weapon["wt"]);
-            $( this ).find( '[name=specal]' ).val(weapon["specal"]);
+            // Specal
+            weapon["specal"].forEach((specal_id, i, arr) => {
+                $( this ).find( '.weapons-field-specal' ).append(`<input disabled name="specal" \
+                    value="${Data["weapon-specal"][specal_id]["name"] + (i === arr.length -1 ? '' : ',')}" \
+                    title="${Data["weapon-specal"][specal_id]["description"]}" \
+                    size="${Data["weapon-specal"][specal_id]["name"].length}" \
+                    >`)
+            });
+
             $( this ).find( '[name=avl]' ).val(weapon["avl"]);
 
-            $( this ).find( '.weapons-head' ).attr('title', weapon["description"]);
+            $( this ).find( '[name=name]' ).attr('title', weapon["description"]);
         })
     });
 }
