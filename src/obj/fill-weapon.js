@@ -14,8 +14,16 @@ function UpdateWeapons() {
             $( this ).find( '[name=wt]' ).val(weapon["wt"]);
             // Specal
             weapon["specal"].forEach((specal_id, i, arr) => {
+                if (specal_id.match(/ \(\d+\)$/)){
+                    specal_x = specal_id.match(/ \(\d+\)$/)[0];
+                    specal_id = specal_id.slice(0, specal_id.length - specal_x.length ) + ' (X)';
+                } else {
+                    specal_x = '';
+                }
+                    
+                console.log(specal_x, specal_id)
                 $( this ).find( '.weapons-field-specal' ).append(`<input disabled name="specal" \
-                    value="${Data["weapon-specal"][specal_id]["name"] + (i === arr.length -1 ? '' : ',')}" \
+                    value="${Data["weapon-specal"][specal_id]["name"] + specal_x + (i === arr.length -1 ? '' : ',')}" \
                     title="${Data["weapon-specal"][specal_id]["description"]}" \
                     size="${Data["weapon-specal"][specal_id]["name"].length}" \
                     >`)

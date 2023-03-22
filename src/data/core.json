@@ -7,6 +7,26 @@
         {   "id": "tearing",
             "name":"Tearing",
             "description":"These weapons call on spinning chainblades, serrated claws, burrowing projectiles, and other vicious means to rip apart targets. These weapons roll one extra die for damage, and the lowest result is discarded."
+        },
+        {   "id":"accurate",
+            "name":"Accurate",
+            "description": "The weapon is crafted for precision attacks, with perfectly crafted las-lenses or finely honed barrels. This grants an additional bonus of +10 to the firer’s Ballistic Skill when used with an Aim action, in addition to the normal bonus granted from Aiming. When a character fires a single shot from a single Basic weapon with the Accurate quality while benefitting from the Aim action, the attack inflicts an additional 1d10 damage for every two degrees of success beyond the first (to a maximum of an extra 2d10). These extra d10s cannot generate Righteous Fury."
+        },
+        {   "id":"Balanced",
+            "name":"Balanced",
+            "description": "Carefully weighted, the weapon moves naturally with the user, making his parries more successful. Balanced weapons grant a +10 bonus to Weapon Skill tests made to Parry. Even if the wielder is using multiple Balanced weapons, he only gains the bonus once."
+        },
+        {   "id":"blast (X)",
+            "name":"Blast",
+            "description": "Attacks from this weapon explode on impact, hurling debris and shrapnel in all directions. When working out a hit from a Blast weapon, anyone within the weapon’s blast radius in metres, indicated by the number in parentheses, is also suffers a single hit from the weapon. Roll damage once and apply it to each character affected by the blast. A Blast weapon also scatters when the user fails his Ballistic Skill test when firing it (see page 230)."
+        },
+        {   "id":"concussive (X)",
+            "name":"Concussive",
+            "description": "Concussive weapons strike with a powerful impact strong enough to temporarily knock a foe senseless. When a target is struck by a Concussive weapon, he must take a Toughness test with a penalty equal to 10 times the number in parentheses (X). For example, a weapon with Concussive (2) would impose a –20 on this Toughness test and Concussive (0) would cause a test with no penalty. If he fails, the target is Stunned for 1 round per degree of failure. If the attack also inflicted an amount of damage greater than the target’s Strength bonus, the target is knocked Prone."
+        },
+        {   "id":"Corrosive",
+            "name":"Corrosive",
+            "description": "These weapons utilise highly caustic acids which cause damage to both the target and his equipment. If a target is struck by an attack from a Corrosive weapon, the Armour points of any armour worn by the target in that location are reduced by 1d10 points. If the Armour points of the armour are reduced below 0 or the target is not wearing any armour in that location, the excess amount of Armour point damage (or the whole amount if the target is wearing no armour in that location) is dealt to the target. This excess damage is not reduced by Toughness. A target’s armour can be reduced multiple times by the effects of a Corrosive weapon, and the Armour point damage is cumulative. A suit of armour can be repaired with a successful Challenging (+0) Tech-Use test, and an Acolyte who possesses the Armour Monger talent can repair the armour while making use of that talent."
         }
     ],
     "weapon": [
