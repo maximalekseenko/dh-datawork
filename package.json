@@ -1,14 +1,16 @@
 {
-    "name": "nw.js-example",
-    "version": "1.0.0",
-    "devDependencies": {
-        "nw-builder": "^3.1.2"
-    },
-    "scripts": {
-        "debug": "nw ./src/ --remote-debugging-port=8080",
-        "build": "nwbuild ./src/ --mode=build --platforms win32,win64,osx64,linux32,linux64 --outDir build/"
-    },
-    "dependencies": {
-        "nw": "^0.74.0"
-    }
+  "name": "dh-datawork",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "nw src/",
+    "prod": "nwbuild --platforms win32 --buildDir dist/ src/"
+  },
+  "keywords": [],
+  "author": "maximalekseenko",
+  "license": "ISC",
+  "devDependencies": {
+    "nw": "^0.44.1-sdk",
+    "nw-builder": "^3.5.7"
+  }
 }

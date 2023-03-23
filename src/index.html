@@ -1,42 +1,68 @@
-<script src="jquery.js"></script> 
 
-<!-- Fonts -->
-<link href="fonts/fonts.css" media="screen" rel="stylesheet" type="text/css">
 
 
 <html> 
     <head> 
+        <!-- Jquery -->
+        <script src="jquery.js"></script> 
+
+        <!-- Fonts -->
+        <link href="fonts/fonts.css" media="screen" rel="stylesheet" type="text/css">
+
+        <!-- CharSheet -->
+        <link href="./charsheet/charsheet.css" media="screen" rel="stylesheet" type="text/css" >
+        <script src="charsheet/charsheet.js"></script>
+
+        <!-- Drag&DropDisable -->
+        <script type="text/javascript">
+            $( window ).on( "dragover drop", function( event ) { event.preventDefault(); } );
+        </script>
+
     </head>
 
-    <body> 
-        <div id="includedContent"></div>
-        asdasd
+    <body>
+        <div id="includedContent" style="width: 100%; height: 100%;"></div>
     </body> 
-
-    <button onclick="// Load native UI library
-    var ngui = require('nw.gui');
-    // Get the current window
-    var nwin = ngui.Window.get();
-    // this will do a hard refresh
-    nwin.reloadIgnoringCache();
-    
-    // here's a regular refresh
-     nwin.reload();
-    "> A</button>
 
 
     <script src="data.js"></script>
-    <script src="charsheet/charsheet.js"></script>
-    <!-- <script src="charsheet/fill-weapon.js"></script> -->
+
+
     <script type="text/javascript">
-        $(document).ready(function(e) {
-            LoadData("core.json");
+        // Drag and drop disables
+
+
+        function AAA( E ) { 
+            console.log( E.dataTransfer.files );
+            reader.onloadend = function() {
+            var data = JSON.parse(this.result);
+            callback(data);
+            };
+
+            reader.readAsText(event.dataTransfer.files[0]);    
+            event.preventDefault();
+
             $("#includedContent").load("charsheet/charsheet.html", function() {
                 UpdateWeapons();
+                UpdateCharacteristics()
             });
+        }
+
+        $(document).ready(function(e) {
+            // $( "#includedContent" ).attr("ondrop", "AAA(event)")
+            $( "#includedContent" ).on("drop", function ( E ) { 
+                console.log( E );
+
+                $("#includedContent").load("charsheet/charsheet.html", function() {
+                    UpdateWeapons();
+                    UpdateCharacteristics()
+                });
+            })
+            
+            LoadData("core.json");
         });
     </script>
-    <script>
+    <script> // DEBUG
         require('nw.gui').Window.get().showDevTools();
-      </script>
+    </script>
 </html>

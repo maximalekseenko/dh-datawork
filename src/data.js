@@ -56,5 +56,4 @@ function LoadData( dataName) {
             });
         };
     });
-    console.log(Data)
 }

@@ -83,7 +83,7 @@ html {
     background-color: var(--cahrsheet-list2);
     height: 100%; 
     width: 100%;
-}
+} 
 .charsheet-characteristics-field:last-child {
     grid-column-start: 2;
     grid-column-end: 2;

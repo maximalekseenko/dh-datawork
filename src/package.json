@@ -1,9 +1,17 @@
 {
-  "name":"dh-datawork",
-  "main":"./index.html",
+  "name": "dh-datawork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "window":{
     "width":1920,
     "height":1080,
     "icon":"./icon.ico"
-  }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
