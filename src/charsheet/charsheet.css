@@ -27,37 +27,85 @@ html {
 }
 
 
-.weapons {
+.charsheet-weapon-holder {
     border: 1px solid var(--cahrsheet-border);
+    display: flex; 
+    flex-direction: column; 
+    height: 100px; 
+    width: 500px;
 }
 
-
-.weapons .weapons-field {
+.charsheet-weapon-field {
     overflow: hidden;
     display: flex;
     border: 1px solid var(--cahrsheet-border);
     background-color: var(--cahrsheet-list2);
 }
 
-.weapons .weapons-field * {
+.charsheet-weapon-field * {
     font: 20px 'Caslon-antique';
     border: 0px solid transparent;
     background-color: transparent;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.weapons .weapons-field {
+.charsheet-weapon-field {
     color: #101010;
     float: left;
 }
 
-.weapons .weapons-field input {
+.charsheet-weapon-input {
     color: #000000;
     float: left;
     width:fit-content;
 }
 
-.weapons .weapons-field input:last-child {
-    color: #000000;
+.charsheet-weapon-input:last-child {
     width: 100%;
+}
+
+
+.charsheet-characteristics-holder {
+    border: 1px solid var(--cahrsheet-border);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: calc(200px * 4/3); 
+    width: 200px;
+}
+
+.charsheet-characteristics-field {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--cahrsheet-border);
+    background-color: var(--cahrsheet-list2);
+    height: 100%; 
+    width: 100%;
+}
+.charsheet-characteristics-field:last-child {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.charsheet-characteristics-label {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cahrsheet-list1);
+    color: #111111;
+    width: calc(100% * 2/3);
+    height: calc(100% * 1/3);
+}
+
+.charsheet-characteristics-input {
+    text-align: center;
+    color: #000000;
+    font: 30px 'Caslon-antique';
+    border: 0px solid transparent;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }

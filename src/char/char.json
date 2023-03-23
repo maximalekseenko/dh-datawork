@@ -1,0 +1,18 @@
+{
+    "name":"Testus Primus",
+    "characteristics": {
+        "WS": 36,
+        "BS": 33,
+        "S":  38,
+        "T":  36,
+        "AG": 36,
+        "INT":34,
+        "PER":38,
+        "WP": 32,
+        "FEL":39,
+        "INF":38
+    },
+    "weapons": [
+        "boltpistol", "stormbolter"
+    ]
+}

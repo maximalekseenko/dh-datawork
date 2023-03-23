@@ -1,5 +1,4 @@
 <script src="jquery.js"></script> 
-<link href="css/main.css" media="screen" rel="stylesheet" type="text/css">
 
 <!-- Fonts -->
 <link href="fonts/fonts.css" media="screen" rel="stylesheet" type="text/css">
@@ -27,11 +26,12 @@
 
 
     <script src="data.js"></script>
-    <script src="obj/fill-weapon.js"></script>
+    <script src="charsheet/charsheet.js"></script>
+    <!-- <script src="charsheet/fill-weapon.js"></script> -->
     <script type="text/javascript">
         $(document).ready(function(e) {
             LoadData("core.json");
-            $("#includedContent").load("obj/charsheet.html", function() {
+            $("#includedContent").load("charsheet/charsheet.html", function() {
                 UpdateWeapons();
             });
         });

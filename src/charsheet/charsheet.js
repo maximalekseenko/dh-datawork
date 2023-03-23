@@ -1,6 +1,7 @@
 function UpdateWeapons() {
+    $( '.characteristics' ).load( "charsheet/characteristics.html");
     $( '.weapon' ).each( function( i ) {
-        $( this ).load( "obj/weapon.html", function( e ) {
+        $( this ).load( "charsheet/weapon.html", function( e ) {
             var weapon = Data[ "weapon" ][ $( this ).attr( 'weapon-id' ) ]
 
             $( this ).find( '[name=name]' ).val(weapon["name"]);
@@ -14,15 +15,16 @@ function UpdateWeapons() {
             $( this ).find( '[name=wt]' ).val(weapon["wt"] + 'kg');
             // Specal
             weapon["specal"].forEach((specal_id, i, arr) => {
+
+                // specal (X)
                 if (specal_id.match(/ \(\d+\)$/)){
                     specal_x = specal_id.match(/ \(\d+\)$/)[0];
                     specal_id = specal_id.slice(0, specal_id.length - specal_x.length ) + ' (X)';
-                } else {
-                    specal_x = '';
-                }
+                } else specal_x = '';
                     
                 console.log(specal_x, specal_id)
-                $( this ).find( '.weapons-field-specal' ).append(`<input disabled name="specal" \
+                $( this ).find( '.charsheet-weapon-field-specal' ).append(`<input disabled name="specal" \
+                    class="charsheet-weapon-input charsheet-weapon-input-specal" \
                     value="${Data["weapon-specal"][specal_id]["name"] + specal_x + (i === arr.length -1 ? '' : ',')}" \
                     title="${Data["weapon-specal"][specal_id]["description"]}" \
                     size="${Data["weapon-specal"][specal_id]["name"].length}" \
