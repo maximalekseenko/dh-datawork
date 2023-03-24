@@ -27,7 +27,7 @@ html {
 }
 
 
-.charsheet-weapon-holder {
+.character-weapon-holder {
     border: 1px solid var(--cahrsheet-border);
     display: flex; 
     flex-direction: column; 
@@ -35,14 +35,14 @@ html {
     width: 500px;
 }
 
-.charsheet-weapon-field {
+.character-weapon-field {
     overflow: hidden;
     display: flex;
     border: 1px solid var(--cahrsheet-border);
     background-color: var(--cahrsheet-list2);
 }
 
-.charsheet-weapon-field * {
+.character-weapon-field * {
     font: 20px 'Caslon-antique';
     border: 0px solid transparent;
     background-color: transparent;
@@ -51,23 +51,23 @@ html {
     align-items: center;
 }
 
-.charsheet-weapon-field {
+.character-weapon-field {
     color: #101010;
     float: left;
 }
 
-.charsheet-weapon-input {
+.character-weapon-input {
     color: #000000;
     float: left;
     width:fit-content;
 }
 
-.charsheet-weapon-input:last-child {
+.character-weapon-input:last-child {
     width: 100%;
 }
 
 
-.charsheet-characteristics-holder {
+.character-characteristics-holder {
     border: 1px solid var(--cahrsheet-border);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -75,7 +75,7 @@ html {
     width: 200px;
 }
 
-.charsheet-characteristics-field {
+.character-characteristics-field {
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -84,12 +84,12 @@ html {
     height: 100%; 
     width: 100%;
 } 
-.charsheet-characteristics-field:last-child {
+.character-characteristics-field:last-child {
     grid-column-start: 2;
     grid-column-end: 2;
 }
 
-.charsheet-characteristics-label {
+.character-characteristics-label {
     display: flex;
     justify-content: center;
     background-color: var(--cahrsheet-list1);
@@ -98,7 +98,7 @@ html {
     height: calc(100% * 1/3);
 }
 
-.charsheet-characteristics-input {
+.character-characteristics-input {
     text-align: center;
     color: #000000;
     font: 30px 'Caslon-antique';
@@ -108,4 +108,36 @@ html {
     align-items: center;
     width: 100%;
     height: 100%;
+}
+
+.character-window {
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    background-color: var(--cahrsheet-background);
+}
+
+.character-window-dropdown {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.character-window-dropdown-input {
+    display: none;
+}
+
+.character-window-dropdown-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: bold 25px 'Caslon-antique';
+    background-color: var(--cahrsheet-list2);
+    border: 2px solid var(--cahrsheet-border);
+    width: 25%;
+    height: 25%;
 }

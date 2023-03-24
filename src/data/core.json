@@ -58,7 +58,7 @@
             "avl":"Very Rare",
             "description":"Boltguns, or bolters as they are often called, are the main weapon of the Space Marines, who carry versions so huge that few humans can easily lift one, let alone fire it. The lighter models others use to serve the Emperor are only slightly less destructive, but still powerful enough to destroy any who oppose His Will."
         },
-        {   "id":"boltheavy",
+        {   "id":"heavybolter",
             "name":"Heavy Bolter",
             "cls":"Heavy",
             "rng":"150m",
@@ -72,7 +72,7 @@
             "avl":"Very Rare",
             "description":"This huge weapon is rarely used outside of military forces, but sometimes is all that stands against some of the terrors of the Ruinous Powers. The larger shells carry additional propellant and stronger explosive charges, making them deadly against armoured foes at long ranges."
         },
-        {   "id":"boltstorm",
+        {   "id":"stormbolter",
             "name":"Storm Bolter",
             "cls":"Basic",
             "rng":"90m",

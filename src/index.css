@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+}
+
+.window {
+    width: 100%;
+}

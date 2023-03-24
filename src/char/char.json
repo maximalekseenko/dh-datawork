@@ -13,6 +13,6 @@
         "INF":38
     },
     "weapons": [
-        "boltpistol", "stormbolter"
+        "boltpistol", "boltgun"
     ]
 }
