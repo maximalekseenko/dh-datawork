@@ -148,10 +148,10 @@ html {
 
 .character-window-dropdown-text {
     display: flex;
-    padding: 10px;
-    flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
+    padding: 10px;
     font: bold 25px 'Caslon-antique';
     background-color: var(--cahrsheet-list2);
     border: 2px dashed var(--cahrsheet-border);
