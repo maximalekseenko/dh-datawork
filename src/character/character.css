@@ -3,7 +3,6 @@
     --cahrsheet-list1: #ba8d1b;
     --cahrsheet-list2: #886815;
     --cahrsheet-border: #503d0d;
-    /* --cahrsheet-list2: #886815; */
 }
 
 .corner5left {
@@ -25,6 +24,9 @@ html {
     font-family: 'Caslon-antique';
     font-weight: bold;
 }
+* {
+    box-sizing: border-box;
+}
 
 
 .character-weapon-holder {
@@ -32,7 +34,15 @@ html {
     display: flex; 
     flex-direction: column; 
     height: 100px; 
-    width: 500px;
+    width: 100%;
+}
+
+.character-weapon-row {
+    /* border: 1px solid var(--cahrsheet-border); */
+    display: flex; 
+    flex-direction: row; 
+    height: 25%;
+    width: 100%;
 }
 
 .character-weapon-field {
@@ -59,20 +69,24 @@ html {
 .character-weapon-input {
     color: #000000;
     float: left;
-    width:fit-content;
+    width: fit-content;
 }
 
 .character-weapon-input:last-child {
     width: 100%;
 }
 
+.character-characteristics {
+    width: 100%;
+}
 
 .character-characteristics-holder {
-    border: 1px solid var(--cahrsheet-border);
+    outline: 1px solid var(--cahrsheet-border);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: calc(200px * 4/3); 
-    width: 200px;
+    width: 100%;
+    /* width: calc(75px * 3); */
+    height: calc(50px * 4);
 }
 
 .character-characteristics-field {
@@ -93,6 +107,7 @@ html {
     display: flex;
     justify-content: center;
     background-color: var(--cahrsheet-list1);
+    border: 1px solid var(--cahrsheet-border);
     color: #111111;
     width: calc(100% * 2/3);
     height: calc(100% * 1/3);
@@ -107,8 +122,9 @@ html {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: calc(100% * 2/3);
 }
+
 
 .character-window {
     width: 100%; 
@@ -132,12 +148,13 @@ html {
 
 .character-window-dropdown-text {
     display: flex;
+    padding: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font: bold 25px 'Caslon-antique';
     background-color: var(--cahrsheet-list2);
-    border: 2px solid var(--cahrsheet-border);
+    border: 2px dashed var(--cahrsheet-border);
     width: 25%;
     height: 25%;
 }

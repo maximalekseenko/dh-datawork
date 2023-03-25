@@ -86,6 +86,17 @@ function characterUpdateWeapon() {
 
 function characterUpdateCharacteristics() {
     $( '.character-characteristics' ).load( "character/characteristics.html", function( e ) {
-
+        console.log($(this).html());
+        console.log($(this).find( "character-characteristics-input-ag" ).html());
+        $( this ).find( ".character-characteristics-input-ws" ).attr( "value", OpenededChar[ "characteristics" ][ "WS" ])
+        $( this ).find( ".character-characteristics-input-bs" ).attr( "value", OpenededChar[ "characteristics" ][ "BS" ])
+        $( this ).find( ".character-characteristics-input-s" ).attr( "value", OpenededChar[ "characteristics" ][ "S" ])
+        $( this ).find( ".character-characteristics-input-t" ).attr( "value", OpenededChar[ "characteristics" ][ "T" ])
+        $( this ).find( ".character-characteristics-input-ag" ).attr( "value", OpenededChar[ "characteristics" ][ "AG" ])
+        $( this ).find( ".character-characteristics-input-int" ).attr( "value", OpenededChar[ "characteristics" ][ "INT" ])
+        $( this ).find( ".character-characteristics-input-per" ).attr( "value", OpenededChar[ "characteristics" ][ "PER" ])
+        $( this ).find( ".character-characteristics-input-wp" ).attr( "value", OpenededChar[ "characteristics" ][ "WP" ])
+        $( this ).find( ".character-characteristics-input-fel" ).attr( "value", OpenededChar[ "characteristics" ][ "FEL" ])
+        $( this ).find( ".character-characteristics-input-inf" ).attr( "value", OpenededChar[ "characteristics" ][ "INF" ])
     });
 }
