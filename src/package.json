@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "window":{
-    "width":1920,
-    "height":1080,
+    "width":730,
+    "height":650,
     "icon":"./icon.ico"
   },
   "keywords": [],
