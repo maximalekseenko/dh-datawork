@@ -21,10 +21,8 @@
             function OpenMechanics () { $( ".window" ).load( "mechanics/mechanics.html", function() { mechanicsLoadList() } ); };
         </script>
 
-        
         <link href="./character/character.css" media="screen" rel="stylesheet" type="text/css" >
         <script src="./character/character.js"></script>
-
 
         <script type="text/javascript">
             const fs = require('fs');
@@ -37,9 +35,14 @@
             <button class="menu-button menu-button-character" title="Characters" onclick="OpenCharacter()">C</button>
             <button class="menu-button menu-button-data" title="Datapacks" onclick="OpenData()">D</button>
             <button class="menu-button menu-button-mechanics" title="Mechanics" onclick="OpenMechanics()">M</button>
+            <!-- <button class="menu-button menu-button-mechanics" title="Mechanics" onclick="window.open('./character/character.html')">A</button> -->
         </div>
         <div class="list"></div>
-        <div class="window"></div>
+        <div class="window">
+            <div class="window-character"></div>
+            <div class="window-data"></div>
+            <div class="window-mechanics"></div>
+        </div>
     </body> 
 
 

@@ -18,7 +18,7 @@ function characterLoadList () {
 }
 
 
-function characterLoadChar ( file ) { $.getJSON( file.path, function( newData ) { characterSaveChar ( newData ) } ) }
+function characterUploadChar ( file ) { $.getJSON( file.path, function( newData ) { characterSaveChar ( newData ) } ) }
 
 
 function characterSaveChar ( data ) {
@@ -86,9 +86,7 @@ function characterUpdateWeapon() {
 
 function characterUpdateCharacteristics() {
     $( '.character-characteristics' ).load( "character/characteristics.html", function( e ) {
-        console.log($(this).html());
-        console.log($(this).find( "character-characteristics-input-ag" ).html());
-        $( this ).find( ".character-characteristics-input-ws" ).attr( "value", OpenededChar[ "characteristics" ][ "WS" ])
+        $( this ).find( ".character-characteristics-input-ws").attr( "value", OpenededChar[ "characteristics" ][ "WS" ])
         $( this ).find( ".character-characteristics-input-bs" ).attr( "value", OpenededChar[ "characteristics" ][ "BS" ])
         $( this ).find( ".character-characteristics-input-s" ).attr( "value", OpenededChar[ "characteristics" ][ "S" ])
         $( this ).find( ".character-characteristics-input-t" ).attr( "value", OpenededChar[ "characteristics" ][ "T" ])
